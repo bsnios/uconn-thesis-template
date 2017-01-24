@@ -1,0 +1,70 @@
+\documentclass[12pt, letterpaper, center, noupper]{uconnthesis}
+
+\ThesisLineSpacing{2}
+\usepackage[square,sort,comma,numbers]{natbib}
+\renewcommand{\bibsection}{} %removes double header for bibliography section
+\usepackage[varg]{txfonts}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage[colorlinks=false]{hyperref}
+\graphicspath{{Figs/}}
+
+
+\begin{document}
+
+\abstract{
+Insert abstract here.
+}
+
+\title{Title}
+\author{Author}
+\submityear{20xx}
+\authorspreviousdegreelong{
+B.S., Undergraduate University, 20yy\\  
+M.S., University of Connecticut, 20zz
+}
+\authorspreviousdegreeshort{M.S.}
+
+\MajorAdvisor{Major Advisor}
+\AssociateAdvisorA{Secondary Advisor 1}
+\AssociateAdvisorB{Secondary Advisor 2}
+
+\dedication{
+Dedication goes here.
+}
+
+\acknowledgements{
+Insert acknowledgements here.
+}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+% Chapters of the thesis
+\input{Chapters/Intro.tex}
+\input{Chapters/Analysis.tex}
+\input{Chapters/Results.tex}
+\input{Chapters/Discussion.tex}
+\input{Chapters/Conclusions.tex}
+
+% All the references are located in here
+\input{Chapters/References.tex}
+
+% Appendices: Place them after references
+\appendix
+\input{Chapters/Appendix.tex}
+%\input{Chapters/Table.tex}
+
+\end{document}
+
+
+
+
+
+
